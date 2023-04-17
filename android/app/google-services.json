@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "1067690827652",
+    "firebase_url": "https://egg-incubation-app-default-rtdb.firebaseio.com",
+    "project_id": "egg-incubation-app",
+    "storage_bucket": "egg-incubation-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1067690827652:android:a73264223c26ccbc9cc7d1",
+        "android_client_info": {
+          "package_name": "com.example.ai_chatbot"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1067690827652-imhpcgkgj3sg6g1dl14i28g2blj8btts.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCuvEthX97Xi_oEUVa1xZAIgQxLb4kZOnM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1067690827652-imhpcgkgj3sg6g1dl14i28g2blj8btts.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1067690827652:android:48560960adb3b3c99cc7d1",
+        "android_client_info": {
+          "package_name": "com.example.egg_incubation_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1067690827652-imhpcgkgj3sg6g1dl14i28g2blj8btts.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCuvEthX97Xi_oEUVa1xZAIgQxLb4kZOnM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1067690827652-imhpcgkgj3sg6g1dl14i28g2blj8btts.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
