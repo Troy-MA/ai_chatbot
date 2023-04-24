@@ -1,4 +1,6 @@
+import 'package:ai_chatbot/models/text_model.dart';
 import 'package:chat_bubbles/chat_bubbles.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -15,9 +17,10 @@ class ChatPage extends StatefulWidget {
 }
 
 class _ChatPageState extends State<ChatPage> {
+  MessagesController textsController = Get.put(MessagesController());
+  final TextEditingController textController = TextEditingController();
   @override
   Widget build(BuildContext context) {
-    MessagesController textsController = Get.put(MessagesController());
     double width = MediaQuery.of(context).size.width;
     return Scaffold(
       appBar: AppBar(
@@ -58,6 +61,7 @@ class _ChatPageState extends State<ChatPage> {
                     ),
                     child: CupertinoTextField(
                       placeholder: "Type message",
+                      controller: textController,
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(15),
                       ),
@@ -65,7 +69,18 @@ class _ChatPageState extends State<ChatPage> {
                   ),
                 ),
                 IconButton(
-                  onPressed: () {},
+                  onPressed: () async => textsController
+                      .sendNewMessage(
+                        "1a9SzCOqTJgF4d0X4WXmvfk0mgm2",
+                        TextModel(
+                          text: textController.text.trim(),
+                          isSender: true,
+                          time: Timestamp.now(),
+                        ),
+                      )
+                      .then(
+                        (value) => textController.clear(),
+                      ),
                   icon: const Icon(
                     Icons.send,
                   ),
