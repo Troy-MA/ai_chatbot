@@ -27,6 +27,4 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-
-
 //create a screen with a person's name on the appbar
